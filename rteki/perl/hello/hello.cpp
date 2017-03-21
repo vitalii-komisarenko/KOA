@@ -1,9 +1,7 @@
-
+#include <stdio.h>
 
 char s[] = "And Hello World!!!\n";
 
-extern "C" char * hello(){
-    
-
-    return s;
+extern "C" int consolePrint(char * s){
+    return printf(s);
 }
